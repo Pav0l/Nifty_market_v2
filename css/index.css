@@ -126,8 +126,62 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   font-size: 62.5%;
   font-family: 'Noto Sans', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2rem;
+}
+p,
+a,
+ul,
+li,
+span,
+button {
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.btn-primary {
+  background-color: #0A4958;
+  border: 2px solid #F6E7D2;
+}
+.btn-primary:hover {
+  border: 2px solid #F6E7D2;
+}
+.btn-secondary {
+  background-color: #01B6AD;
+  border: 2px solid #F6E7D2;
+}
+.btn-style {
+  color: #F6E7D2;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  padding: 2rem 2.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease 0s;
+}
+.btn-style:hover {
+  background-color: #F6E7D2;
+  color: #01B6AD;
+  transition: background-color 0.2s ease 0s;
 }

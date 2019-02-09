@@ -4,3 +4,32 @@
 @white: #FFFFFF;
 @pale: #F6E7D2;
 
+
+// BUTTONS:
+.btn-primary {
+  background-color: @secondary;
+  border: 2px solid @pale;
+  &:hover {
+    border: 2px solid @pale;
+  }
+}
+
+.btn-secondary {
+  background-color: @primary;
+  border: 2px solid @pale;
+}
+
+.btn-style {
+  color: @pale;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  padding: 2rem 2.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease 0s;
+  &:hover {
+    background-color: @pale;
+    color: @primary;
+    transition: background-color 0.2s ease 0s;
+  }
+}
