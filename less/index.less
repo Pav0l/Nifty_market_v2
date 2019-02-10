@@ -2,3 +2,168 @@
 @import './global.less';
 @import './mixins_variables.less';
 
+// ================ NAVBAR ================
+.navbar-container {
+  width: 100%;
+  background-color: @secondary;
+
+  .navbar-items {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem;
+    margin: 0 auto;
+
+    .navbar-logo {      
+      font-weight: 700;
+      a {
+        color: @pale;
+        font-size: 2.8rem;
+      }
+    }
+
+    .navbar-buttons {
+      display: flex;
+      flex-direction: row;
+
+      .dropdown {
+        display:flex;
+        align-items: center;
+
+        .dropdown-btn {
+          width: 3rem;
+          margin-left: 1rem;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .dropdown-content {
+          display: flex;
+          flex-direction: column;
+          z-index: 100;
+          overflow: scroll;
+          background-color: @pale;
+          width: 100%;
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          bottom: 0px;
+          color: @secondary;
+        
+          .dropdown-content-navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+            align-items: center;
+        
+            .navbar-logo a {
+              color: @secondary;
+              font-size: 2.8rem;
+            }
+        
+            .dropdown-btn-cancel {
+              width: 3rem;
+              margin: 1rem;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        
+          .dropdown-content-btns {
+            width: 100%;
+            border-bottom: 1px solid grey;
+            margin: 0 auto;
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+            button {
+              width: 95%;
+              margin: 0 auto;
+              &:hover {
+                border-color: @primary;
+              }
+            }
+          }
+
+          .dropdown-content-products {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 100%;
+            padding: 2rem;
+            border-bottom: 1px solid grey;
+
+            .dropdown-content-product-name {
+              font-size: 2rem;
+              margin-bottom: 2rem;
+              text-transform: uppercase;
+              color: @secondary;
+              font-weight: 700;
+            }
+
+            .dropdown-content-product-list {
+              display: flex;
+              justify-content: space-between;
+              flex-flow: row wrap;
+
+              .dropdown-content-product-item {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 2rem;
+                font-weight: 700;
+                
+                div {
+                  &:first-child {
+                  padding-right: 1rem;
+                  }
+                }
+              }
+            }
+
+            .dropdown-content-product-link {
+              margin: 1rem auto 0;
+              a {
+                color: @primary;
+              }
+            }
+          }
+
+          .dropdown-content-links {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+
+            div {
+              font-size: 2rem;
+              margin-bottom: 2rem;
+              text-transform: uppercase;
+              color: @secondary;
+              font-weight: 700;
+            }
+
+            a {
+              padding: 1.5rem;
+              color: black;
+              border-bottom: 1px solid grey;
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+          }          
+        }
+        
+        .dropdown-hidden {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// ================ /NAVBAR ================
