@@ -185,3 +185,34 @@ img {
   color: #01B6AD;
   transition: background-color 0.2s ease 0s;
 }
+.navbar-container {
+  width: 100%;
+  background-color: #0A4958;
+}
+.navbar-container .navbar-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem;
+  margin: 0 auto;
+}
+.navbar-container .navbar-items .navbar-logo {
+  font-weight: 700;
+}
+.navbar-container .navbar-items .navbar-logo a {
+  color: #F6E7D2;
+  font-size: 2.8rem;
+}
+.navbar-container .navbar-items .navbar-buttons {
+  display: flex;
+  flex-direction: row;
+}
+.navbar-container .navbar-items .navbar-buttons .dropdown {
+  display: flex;
+  align-items: center;
+}
+.navbar-container .navbar-items .navbar-buttons .dropdown .dropdown-btn {
+  width: 3rem;
+  margin-left: 1rem;
+}

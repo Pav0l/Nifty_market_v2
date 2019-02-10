@@ -2,3 +2,46 @@
 @import './global.less';
 @import './mixins_variables.less';
 
+// ================ NAVBAR ================
+.navbar-container {
+  width: 100%;
+  background-color: @secondary;
+
+  .navbar-items {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem;
+    margin: 0 auto;
+
+    .navbar-logo {      
+      font-weight: 700;
+      a {
+        color: @pale;
+        font-size: 2.8rem;
+      }
+    }
+
+    .navbar-buttons {
+      display: flex;
+      flex-direction: row;
+
+      .dropdown {
+        display:flex;
+        align-items: center;
+
+        .dropdown-btn {
+          width: 3rem;
+          margin-left: 1rem;
+        }
+
+        // dropdown content here
+      }
+    }
+  }
+}
+
+
+
+// ================ /NAVBAR ================
