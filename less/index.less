@@ -12,8 +12,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 2.4rem;
+    padding: 2rem;
     margin: 0 auto;
+    .max-width();
 
     .navbar-logo {      
       font-weight: 700;
@@ -27,13 +28,17 @@
       display: flex;
       flex-direction: row;
 
+      .btn-primary {
+        padding: 1rem 1.5rem;
+      }
+
       .dropdown {
         display:flex;
         align-items: center;
 
         .dropdown-btn {
           width: 3rem;
-          margin-left: 1rem;
+          margin-left: 2rem;
           &:hover {
             cursor: pointer;
           }
@@ -55,7 +60,7 @@
           .dropdown-content-navbar {
             display: flex;
             justify-content: space-between;
-            padding: 2rem;
+            padding: 1.5rem;
             align-items: center;
         
             .navbar-logo a {
@@ -64,7 +69,7 @@
             }
         
             .dropdown-btn-cancel {
-              width: 3rem;
+              width: 2rem;
               margin: 1rem;
               &:hover {
                 cursor: pointer;
@@ -167,3 +172,51 @@
 }
 
 // ================ /NAVBAR ================
+
+// ================ HEADER ================
+.header-container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .max-width();
+  margin: 0 auto;
+  background-color: @secondary;
+  color: @pale;
+  text-align: center;  
+  padding: 4rem 2rem 10rem;
+  border-bottom-left-radius: 50% 8%;
+  border-bottom-right-radius: 50% 8%;
+
+  h2 {
+    font-weight: 700;
+    line-height: 1.17;
+    color: @white;
+  }
+
+  p {
+    line-height: 1.7;
+    margin: 2rem 0;
+  }
+
+  form {
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+
+    input {
+      width: 100%;
+      padding: 1.5rem;
+      border-radius: 4px;
+      border: none;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+// ================ /HEADER ================
