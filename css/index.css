@@ -176,7 +176,7 @@ img {
   border-radius: 4px;
   text-align: center;
   font-weight: 700;
-  padding: 2rem 2.5rem;
+  padding: 1.5rem 2rem;
   cursor: pointer;
   transition: background-color 0.2s ease 0s;
 }
@@ -184,6 +184,9 @@ img {
   background-color: #F6E7D2;
   color: #01B6AD;
   transition: background-color 0.2s ease 0s;
+}
+.max-width {
+  max-width: 1180px;
 }
 .navbar-container {
   width: 100%;
@@ -196,6 +199,7 @@ img {
   justify-content: space-between;
   padding: 2rem;
   margin: 0 auto;
+  max-width: 1180px;
 }
 .navbar-container .navbar-items .navbar-logo {
   font-weight: 700;
@@ -326,4 +330,43 @@ img {
 }
 .navbar-container .navbar-items .navbar-buttons .dropdown .dropdown-hidden {
   display: none;
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  background-color: #0A4958;
+  color: #F6E7D2;
+  text-align: center;
+  padding: 4rem 2rem 10rem;
+  border-bottom-left-radius: 50% 8%;
+  border-bottom-right-radius: 50% 8%;
+}
+.header-container h2 {
+  font-weight: 700;
+  line-height: 1.17;
+  color: #FFFFFF;
+}
+.header-container p {
+  line-height: 1.7;
+  margin: 2rem 0;
+}
+.header-container form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.header-container form input {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 4px;
+  border: none;
+}
+.header-container form button {
+  width: 100%;
+  margin-top: 1.5rem;
 }
