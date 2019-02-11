@@ -194,7 +194,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 2.4rem;
+  padding: 2rem;
   margin: 0 auto;
 }
 .navbar-container .navbar-items .navbar-logo {
@@ -208,13 +208,16 @@ img {
   display: flex;
   flex-direction: row;
 }
+.navbar-container .navbar-items .navbar-buttons .btn-primary {
+  padding: 1rem 1.5rem;
+}
 .navbar-container .navbar-items .navbar-buttons .dropdown {
   display: flex;
   align-items: center;
 }
 .navbar-container .navbar-items .navbar-buttons .dropdown .dropdown-btn {
   width: 3rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 .navbar-container .navbar-items .navbar-buttons .dropdown .dropdown-btn:hover {
   cursor: pointer;
@@ -235,7 +238,7 @@ img {
 .navbar-container .navbar-items .navbar-buttons .dropdown .dropdown-content .dropdown-content-navbar {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1.5rem;
   align-items: center;
 }
 .navbar-container .navbar-items .navbar-buttons .dropdown .dropdown-content .dropdown-content-navbar .navbar-logo a {
@@ -243,7 +246,7 @@ img {
   font-size: 2.8rem;
 }
 .navbar-container .navbar-items .navbar-buttons .dropdown .dropdown-content .dropdown-content-navbar .dropdown-btn-cancel {
-  width: 3rem;
+  width: 2rem;
   margin: 1rem;
 }
 .navbar-container .navbar-items .navbar-buttons .dropdown .dropdown-content .dropdown-content-navbar .dropdown-btn-cancel:hover {
