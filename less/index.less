@@ -220,3 +220,42 @@
 }
 
 // ================ /HEADER ================
+
+// ================ HERO ================
+.hero-container {
+  .max-width();
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  .featured-container {
+    padding: 0 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+     margin-top: -6rem;
+
+    .card-container {
+      max-width: 400px;
+      min-width: 30rem;
+      margin: 1rem;
+      position: relative;
+      border: 1px solid grey;
+
+      .card-text {
+        position: absolute;
+        bottom: 10px;
+        padding: 0 0.5rem;
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// ================ /HERO ================
