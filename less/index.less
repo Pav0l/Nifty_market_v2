@@ -180,7 +180,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  .max-width();
   margin: 0 auto;
   background-color: @secondary;
   color: @pale;
@@ -188,6 +187,10 @@
   padding: 4rem 2rem 10rem;
   border-bottom-left-radius: 50% 8%;
   border-bottom-right-radius: 50% 8%;
+
+  div {
+    .max-width();
+  }
 
   h2 {
     font-weight: 700;

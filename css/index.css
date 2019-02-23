@@ -337,7 +337,6 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1180px;
   margin: 0 auto;
   background-color: #0A4958;
   color: #F6E7D2;
@@ -345,6 +344,9 @@ img {
   padding: 4rem 2rem 10rem;
   border-bottom-left-radius: 50% 8%;
   border-bottom-right-radius: 50% 8%;
+}
+.header-container div {
+  max-width: 1180px;
 }
 .header-container h2 {
   font-weight: 700;
