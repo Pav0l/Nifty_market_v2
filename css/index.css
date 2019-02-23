@@ -360,6 +360,7 @@ img {
 .header-container form {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   width: 90%;
 }
 .header-container form input {
@@ -371,6 +372,24 @@ img {
 .header-container form button {
   width: 100%;
   margin-top: 1.5rem;
+}
+@media (min-width: 500px) {
+  .header-container form {
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+  }
+  .header-container form input {
+    padding: 1.5rem;
+    margin-right: 1rem;
+    border: 2px solid #FFFFFF;
+    font-size: 1.6rem;
+    flex: 3;
+  }
+  .header-container form button {
+    margin: 0;
+    flex: 1;
+  }
 }
 .hero-container {
   max-width: 1180px;
